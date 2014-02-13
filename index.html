@@ -1,28 +1,61 @@
 <html>
   <head>
-     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-     <title>CSV Analyzer</title>
-     <link href="global.css" rel="stylesheet" type="text/css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>CSV</title>
 
-     <script type="text/javascript" src="lib/underscore.js"></script>
-     <script type="text/javascript" src="lib/jquery.js"></script>
-     
-     <!--<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>-->
-     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-     <script type="text/javascript" src="csv.js"></script>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="lib/underscore.js"></script>
+    <script type="text/javascript" src="lib/jquery.js"></script> 
+    <script type="text/javascript" src="csv.js"></script>
+
   </head>
   <body>
-    <h1>Comma Separated Value Analyzer</h1>
-    <div>
-      <i>Write a CSV string. Click the table button. The program outputs a table with the specified data.</i>
+	  
+	  
+    <div class="text">
+      <h1>
+		  CSV
+        <small>
+          Comma Separated Value Analyzer
+        </small>
+      </h1>
+      <hr/>
     </div>
-    <table>
-      <tr>
-        <th>CSV string:</th> <!-- autofocus attribute is HTML5 -->
-        <td><textarea autofocus cols = "80" rows = "5" id="original"></textarea></td>
-      </tr>
-    </table>
-    <button type="button">table:</button><br>
-    <span class="output" id="finaltable"></span>
+    
+    
+    <div class="text">
+		
+      <h1>  </h1>
+      <p>
+        Write a CSV string. Click the 'Generate table' button.
+        The program outputs a table with the specified data..
+      </p>     
+      <p>
+        CSV string:
+        <textarea autofocus cols = "90" rows = "10" id="original"></textarea>
+        <button type="button">Generate table</button><br>
+      </p>
+      
+      <br> <br/>
+      <h2>
+        Table result:
+      </h2>
+      <span class="output" id="finaltable"></span>
+      
+    </div>
+
+     <div class="text">
+      <hr/>
+      <div class="text">
+		  
+		<h3> <a href="https://github.com/alu0100536591/csv">GitHub repository</a> </h3>
+		<h3>  </h3>
+		<h3> <a href="https://github.com/alu0100536591/csv/test">Tests link</a> </h3>
+		<h3> &copy; Jorge O. Blanchard Cruz. </h3>
+
+      </div>
+      
+    </div>
+    
   </body>
 </html>
