@@ -8,9 +8,9 @@ suite('csv', function() {
     test('Return String', function() {
 		v_input = "producto, precio";
 		
-        original.value = v_input;
+        textbox_input.value = v_input;
         calculate();
-        assert.isString(finaltable.innerHTML);
+        assert.isString(table_output.innerHTML);
     });
     
     test('Return Table', function() {
@@ -21,15 +21,15 @@ suite('csv', function() {
 				    
 		v_output = '<p>\n</p><table class="center" id="result">\n<tbody><tr> <td>producto</td>  <td>precio</td> </tr>\n<tr> <td>camisa</td>  <td>4,3</td> </tr>\n<tr class="error"> <td>libro de O</td>  <td>Reilly</td>  <td>7,2</td> </tr>\n</tbody></table>'
 		
-        original.value = v_input;
+        textbox_input.value = v_input;
         calculate();
-        assert.deepEqual(finaltable.innerHTML, v_output);
+        assert.deepEqual(table_output.innerHTML, v_output);
     });
     
     test('Error?', function() {
 		v_input = "\"Not display\" \"in this\"\n\"window\"";
 		
-		original.value = v_input;
+		textbox_input.value = v_input;
 		calculate();
 		assert.isNotNull(result.innerHTML.match(/class=\"error\"/));
 	});
