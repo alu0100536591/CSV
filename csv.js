@@ -9,18 +9,18 @@ $(document).ready(function() {
 
 function calculate() {
   var result;
-  var original       = document.getElementById("original");
+  var original = document.getElementById("original");
   var temp = original.value;
   var regexp = /\s*"((?:[^"\\]|\\.)*)"\s*,?|\s*([^,]+),?|\s*,/g;
   var lines = temp.split(/\n+\s*/);
   var commonLength = NaN;
   var r = [];
   // Template using underscore
-  var row = "<% _.each(items, function(name) { %>"     +
-            "                    <td><%= name %></td>" +
-            "              <% }); %>";
+  var row = "<% _.each(items, function(name) { %>" +
+            " <td><%= name %></td>" +
+            " <% }); %>";
 
-  if (window.localStorage) localStorage.original  = temp;
+  if (window.localStorage) localStorage.original = temp;
   
   for(var t in lines) {
     var temp = lines[t];
