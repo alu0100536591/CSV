@@ -12,6 +12,12 @@ body {
 }
 
 
+#table_output:hover td { background-color: #F0F0F0; }
+tr:nth-child(odd) { background-color:  	#B8B8B8  ; }
+tr:nth-child(even) { background-color: #E8E8E8; }
+input { text-align: right; border: none; } /* Align input to the right */
+tr.error { background-color: red; }
+
 p {
   font-family: inherit;
   font-weight: normal;
@@ -58,7 +64,6 @@ table {
 	border-style: dotted;
 	border-color: gray;
 	border-collapse: collapse;
-	background-color: white;
 	text-align: left;
 }
 table th {
@@ -66,7 +71,6 @@ table th {
 	padding: 5px;
 	border-style: dotted;
 	border-color: gray;
-	background-color: white;
 	-moz-border-radius: ;
 }
 table td {
@@ -74,9 +78,9 @@ table td {
 	padding: 5px;
 	border-style: dotted;
 	border-color: gray;
-	background-color: white;
 	-moz-border-radius: ;
 }
+
 
 th, td {
   margin: 0px;
@@ -131,11 +135,7 @@ input {
   border: none;
 }
 
-#finaltable:hover td { background-color: blue; }
-tr:nth-child(odd) { background-color:#eee; }
-tr:nth-child(even) { background-color:#00FF66; }
-input { text-align: right; border: none; } /* Align input to the right */
-tr.error { background-color: red; }
+
 
 
 
