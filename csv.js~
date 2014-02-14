@@ -29,7 +29,7 @@ function calculate() {
             " <% }); %>";
 
   if (window.localStorage) 
-	localStorage.str_input = temp;
+	localStorage.original = temp;
   
   for(var t in lines) {
     var temp = lines[t];
