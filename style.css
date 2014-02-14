@@ -1,7 +1,7 @@
 html, body { font-size: 100%; }
 body {
   background-image:url('assets/BackgroundHD.jpg');
-  /*background: #F0F0F0 ;*/
+  background: #F0F0F0 ;
   color: #222222;
   padding: 0;
   margin: 0;
@@ -10,6 +10,7 @@ body {
   font-style: normal;
   line-height: 1;
 }
+
 
 p {
   font-family: inherit;
@@ -25,7 +26,7 @@ h2 { font-size: 1.4rem;}
 h3 { font-size: 0.8rem;}
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
   font-size: 60%;
-  color: 333366;
+  color: #F0F0F0;
   line-height: 0;
 }
 
@@ -130,12 +131,12 @@ input {
   border: none;
 }
 
-tr.error { background-color: 660000; }
+#finaltable:hover td { background-color: blue; }
+tr:nth-child(odd) { background-color:#eee; }
+tr:nth-child(even) { background-color:#00FF66; }
+input { text-align: right; border: none; } /* Align input to the right */
+tr.error { background-color: red; }
 
-/*#finaltable:hover td {
-  background-color: #475869;
-  transition: background-color 300ms ease-out 0s;
-}
-tr:nth-child(odd) { background-color: rgba(0, 140, 186, 0.85); }
-tr:nth-child(even) { background-color: rgba(0, 72, 186, 0.85); }
-/*#result { border-color: 660000; }*/
+
+
+
