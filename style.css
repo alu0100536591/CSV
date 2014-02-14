@@ -30,9 +30,9 @@ p {
 h1 { font-size: 2rem;}
 h2 { font-size: 1.4rem;}
 h3 { font-size: 0.8rem;}
-h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+h1 small, h2 small, h3 small {
   font-size: 60%;
-  color: #F0F0F0;
+  color: #333366 ;
   line-height: 0;
 }
 
